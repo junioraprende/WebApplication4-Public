@@ -20,6 +20,7 @@
         </div>
         <!--método post para el botón-->
         <div class="container">
+
             <div class="row">
                 <div class="col-md-6">
                     @*<!--el asp-for es para acceder al item label->*@
@@ -38,7 +39,9 @@
                     <span asp-validation-for="MostrarOrden" class="text-danger"></span>
                 </div>
             </div>
+
             <br />
+
             <div class="d-grid gap-2 d-md-block">
                 <button class="btn btn-primary" type="submit">Crear Nueva</button>
                 <a class="btn btn-success" asp-controller="Categoria" asp-action="Index">Regresar</a>
@@ -48,8 +51,8 @@
 
 </form>
 
-@*validaciones de lado cliente*@
+@*validaciones de lado cliente(no recomendado) *@
 @section Scripts{
-    @{<partial name="_ValidationScripstsPartial"/>}
+    @{<partial name="_ValidationScriptsPartial"/>}
 
 }
